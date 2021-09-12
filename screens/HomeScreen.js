@@ -43,7 +43,8 @@ const HomeScreen = () => {
                     minLength={2}
                     returnKeyType={"search"}
                     enablePoweredByContainer={false}
-                    onPress={(data, details = null) => {
+                    fetchDetails={true}
+                    onPress={(data, details) => {
                         console.log(details)
                         // dispatch(setOrigin({
                         //     location: details.geometry.location,
